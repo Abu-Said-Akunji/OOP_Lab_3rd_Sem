@@ -1,0 +1,1 @@
+cout << "\nEqual to operator over loading\n";

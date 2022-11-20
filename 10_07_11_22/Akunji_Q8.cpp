@@ -1,0 +1,1 @@
+/*Q8.viii. WAP to write multiple data to a file using insertion operator and read data from file*/

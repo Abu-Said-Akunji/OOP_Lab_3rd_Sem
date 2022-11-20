@@ -1,0 +1,1 @@
+/*Q7.WAP to read and write objects to a file, using read and write functions.*/
