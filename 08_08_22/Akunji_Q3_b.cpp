@@ -3,12 +3,12 @@
 #include <iostream>
 using namespace std;
 
-void displaychar(char c, int n = 80)
+void displaychar(char c, int n =10)
 {
     char b = c;
     for (int i = 0; i < n; i++)
     {
-        cout << b;
+        cout << b<<"\n";
     }
 }
 
@@ -27,9 +27,9 @@ int main()
     cout << "Enter a character" << endl;
     cin >> a;
 
-    displaychar(a);
+    displaychar(a,5);
     cout << endl;
-    displaychar(a, 5);
+    displaychar(a);
     cout << endl;
     displaystar();
     cout << endl;

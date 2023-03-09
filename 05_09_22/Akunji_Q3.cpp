@@ -40,7 +40,7 @@ public:
     void get_test_result(void);
     void put_test_result(void);
 };
-/*void test::get_test_result(void)
+void test::get_test_result(void)
 {
     cout << "\nEnter the marks for the five subject respectively : ";
     cin >> sub1 >> sub2 >> sub3 >> sub4 >> sub5;
@@ -48,9 +48,9 @@ public:
 
 void test::put_test_result(void)
 {
-    cout << "\nThe marks of five subjects are : "<<endl;
+    cout << "\nThe marks of five subjects are : " << endl;
     cout << " Subject 1: " << sub1 << " Subject 2: " << sub2 << "\n Subject 3: " << sub3 << " Subject 4: " << sub4 << "\n Subject 5: " << sub5;
-}*/
+}
 class result : public test
 {
 private:
@@ -59,25 +59,13 @@ private:
 
 public:
     void get_result(void);
-
-    void result::get_test_result(void)
-    {
-        cout << "\nEnter the marks for the five subject respectively : ";
-        cin >> sub1 >> sub2 >> sub3 >> sub4 >> sub5;
-    }
-
-    void result::put_test_result(void)
-    {
-        cout << "\nThe marks of five subjects are : " << endl;
-        cout << " Subject 1: " << sub1 << " Subject 2: " << sub2 << "\n Subject 3: " << sub3 << " Subject 4: " << sub4 << "\n Subject 5: " << sub5;
-    }
 };
 void result ::get_result(void)
 {
     total_mark = sub1 + sub2 + sub3 + sub3 + sub4 + sub5;
-    cout << "The total mark is= " << total_mark;
-    percent = total_mark / 500;
-    cout << "the Percentage is= " << percent;
+    cout << "\nThe total mark is= " << total_mark;
+    percent = (total_mark * 100) / 500;
+    cout << "\nThe Percentage is= " << percent << "% ";
 }
 
 int main()

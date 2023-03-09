@@ -2,20 +2,20 @@
 using namespace std;
 
 template <typename M>
-M myEquality(M s, M t)
+M Equal(M s, M t)
 {
     return (s != t) ? s : (t = 0);
 }
 class Toll
 {
 public:
-    int cars_crossed;
+    int c_crss;
     int count;
     void get()
     {
         cout << "The no of cars that have already crossed : \n";
-        cin >> cars_crossed;
-        count = cars_crossed;
+        cin >> c_crss;
+        count = c_crss;
     }
 
     Toll operator++(int)
@@ -123,7 +123,7 @@ int main()
         {
         case 1:
             cout << "The output of the template function is : \n";
-            cout << myEquality<int>(5, 5) << endl;
+            cout << Equal<int>(5, 5) << endl;
             break;
 
         case 2:

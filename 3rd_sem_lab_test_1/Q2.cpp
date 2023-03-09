@@ -1,18 +1,18 @@
-#include <iostream>
+
+#include<iostream>
 using namespace std;
-
-class CSE21
-{
+class Base{
 public:
-
-    int roll;
-    char *name;
-    char grade, name;
-    int *roll_no;
-    char *grade;
-    CSE21()
-    {
-        roll_no = new int;
-        *roll_no = roll;
-    }
+virtual void show() { cout<<" In Base \n"; }
 };
+class Derived: public Base{
+public:
+void show() { cout<<"In Derived \n"; }
+};
+int main(void){
+Base *bp = new Derived;
+bp->show();
+Base &br=*bp;
+br.show();
+cout<<sizeof(bp);
+return 0; }
